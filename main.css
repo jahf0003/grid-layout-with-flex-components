@@ -13,18 +13,35 @@ body {
 }
 
 .emoji h2 {
-  margin: 0;
-  border-bottom: 2px solid #ccc;
+	margin: 0;
+	border-bottom: 2px solid #ccc;
 }
 
 .emoji a {
-  text-decoration: none;
-  background-color: #781BAA;
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
+	text-decoration: none;
+	background-color: #781BAA;
+	color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	margin-top: 15px;
 }
 
 .icon {
-  font-size: 4rem;
+	font-size: 4rem;
+	align-self: center;
+}
+
+.emojis {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.emoji :nth-child(2) {
+	order: -1;
+}
+
+.emoji :nth-child(1) {
+	order: 0;
 }
